@@ -27,6 +27,7 @@ let card = (data) => {
                     <p>Director : ${data.Director}</p>
                     <p>${data.Plot}</p>
                     <p>Awards: ${data.Awards}</p>
+                    <a href="${data.Website} class="btn btn-primary">See Trailer</a>
             </div>
       </div> `
 };
