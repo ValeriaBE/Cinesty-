@@ -9,7 +9,10 @@ const randomMovieArray = ['Toy Story 4', 'What men want', "Isn't it romantic", '
 home.addEventListener('click', () => {
     hi.style.display = 'none';
     classicmov.style.display = 'none';
-    yearmov.style.display='none';
+    yearmov.style.display = 'none';
+    yearmov2.style.display = 'none';
+    yearmov3.style.display = 'none';
+    yearmov4.style.display = 'none';
     demo.style.display = 'block';
     watch.style.display = 'block';
 })
@@ -36,7 +39,10 @@ const randomMovie = randomMovieArray.forEach(item => {
                 classicmov.style.display = 'none';
                 demo.style.display = 'none';
                 watch.style.display = 'none';
-                yearmov.style.display='none';
+                yearmov.style.display = 'none';
+                yearmov2.style.display = 'none';
+                yearmov3.style.display = 'none';
+                yearmov4.style.display = 'none';
                 hi.style.display = 'block';
                 document.getElementById('hi').innerHTML += card(data);
             });
@@ -51,7 +57,10 @@ const classMovie = classicMovieArray.forEach(item => {
                 demo.style.display = 'none';
                 watch.style.display = 'none';
                 hi.style.display = 'none';
-                yearmov.style.display='none';
+                yearmov.style.display = 'none';
+                yearmov2.style.display = 'none';
+                yearmov3.style.display = 'none';
+                yearmov4.style.display = 'none';
                 classicmov.style.display = 'block';
                 document.getElementById('classicmov').innerHTML += card(data);
             });
@@ -104,7 +113,6 @@ const slide3 = sliderArr3.forEach(item => {
             })
         })
 })
-
 const three = document.getElementById('three');
 const yearmov = document.getElementById('yearmov');
 const yearArr = ['Elf', 'Bruce Almighty', 'Freaky Friday', 'Scary Movie 3'];
@@ -117,10 +125,10 @@ const year1 = yearArr.forEach(item => {
                 watch.style.display = 'none';
                 hi.style.display = 'none';
                 classicmov.style.display = 'none';
-                yearmov4.style.display='none';
-                yearmov2.style.display='none';
-                yearmov3.style.display='none';
-                yearmov.style.display='block';
+                yearmov4.style.display = 'none';
+                yearmov2.style.display = 'none';
+                yearmov3.style.display = 'none';
+                yearmov.style.display = 'block';
                 yearmov.innerHTML += card(data);
             })
         })
@@ -137,10 +145,10 @@ const year2 = yearArr2.forEach(item => {
                 watch.style.display = 'none';
                 hi.style.display = 'none';
                 classicmov.style.display = 'none';
-                yearmov.style.display='none';
-                yearmov4.style.display='none';
-                yearmov3.style.display='none';
-                yearmov2.style.display='block';
+                yearmov.style.display = 'none';
+                yearmov4.style.display = 'none';
+                yearmov3.style.display = 'none';
+                yearmov2.style.display = 'block';
                 yearmov2.innerHTML += card(data);
             })
         })
@@ -158,10 +166,10 @@ const year3 = yearArr3.forEach(item => {
                 watch.style.display = 'none';
                 hi.style.display = 'none';
                 classicmov.style.display = 'none';
-                yearmov.style.display='none';
-                yearmov2.style.display='none';
-                yearmov4.style.display='none';
-                yearmov3.style.display='block';
+                yearmov.style.display = 'none';
+                yearmov2.style.display = 'none';
+                yearmov4.style.display = 'none';
+                yearmov3.style.display = 'block';
                 yearmov3.innerHTML += card(data);
             })
         })
@@ -178,11 +186,11 @@ const year4 = yearArr4.forEach(item => {
                 watch.style.display = 'none';
                 hi.style.display = 'none';
                 classicmov.style.display = 'none';
-                yearmov.style.display='none';
-                yearmov2.style.display='none';
-                yearmov3.style.display='none';
-                yearmov4.style.display='block';
+                yearmov.style.display = 'none';
+                yearmov2.style.display = 'none';
+                yearmov3.style.display = 'none';
+                yearmov4.style.display = 'block';
                 yearmov4.innerHTML += card(data);
             })
         })
-})
+});
