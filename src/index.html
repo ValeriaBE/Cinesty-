@@ -32,9 +32,11 @@
     <div class="second-navbar navbar-expand-md">
       <button type="button" id="home" class="premiers btn btn-primary btn-sm">HOME</button>
       <button type="button" id="new" class="premiers btn btn-primary btn-sm">NEW MOVIES</button>
+      <button type="button" id="classic" class="premiers btn btn-primary btn-sm">CLASSIC COMEDIES</button>
     </div>
   </header>
   <div id="hi"></div>
+  <div id="classicmov"></div>
   <div id="demo" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
       <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -44,13 +46,32 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/sponge.jpg" alt="Los Angeles">
+        <img class="slider-img" src="img/sponge.jpg">
+        <div class="centered box">
+          <h2 class="text size">The Spongebob Movie</h2>
+          <button id="learn1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Learn
+            more</button>
+          <a id="watchbtn1" class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=DBe5q-vPKfE">Watch
+            Trailer</a>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="img/grown-ups2.jpg" alt="Chicago">
+        <img class="slider-img" src="img/grown-ups2.jpg">
+        <div class="centered box">
+          <h2 class="text size">Grown-Ups</h2>
+          <button id="learn2" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-sm">Learn more</button>
+          <a id="watchbtn2" class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=vgOEoDaEPAk">Watch
+            Trailer</a>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="img/zoo.jpg" alt="New York">
+        <img class="slider-img" src="img/zoo.jpg">
+        <div class="centered box">
+          <h2 class="text size">Zootopia</h2>
+          <button id="learn3" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-sm">Learn more</button>
+          <a id="watchbtn3" class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=jWM0ct-OLsM">Watch
+            Trailer</a>
+        </div>
       </div>
     </div>
 
@@ -61,9 +82,25 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Learn More</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <div id="modal-body" class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <main id="watch">
     <div class="background-img">
-      <div class="container text">
+      <div class=" centered text centered2">
         <h2 class="watch">Watch your favorite funny movies online</h2>
         <p>
           Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean
